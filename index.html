@@ -1,1 +1,449 @@
-hi
+<!DOCTYPE html>
+
+<style>
+article:hover {
+  background-color: #ffdb99;
+}
+</style>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sourav Johar</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="css/main.bundle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Sourav Johar</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/1.jpeg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"> Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rexperience"> Research</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Honors</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Sourav
+                        <span class="text-primary">Johar</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Member of Technical Staff, VMware R&D ·
+                        <a href="mailto:johar.sourav97@email.com">johar.sourav97@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I'm a 22 year old CS undergrad from India, who is highly motivated to innovate in the field of AI. I aim to build artificial agents that show human-like “common sense” in their operating domains. When I'm not in front of my computer, I like to hike, play the piano, and read a book.
+                      I also upload programming tutorials on my YouTube channel where I wish I was more active.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.youtube.com/channel/UCbsI5Rw9_yLccfoMEYYxDCg"><i class="fab fa-youtube"></i></a>
+                        <a class="social-icon" href="http://www.linkedin.com/in/sourav-johar"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/SouravJohar"><i class="fab fa-github"></i></a>
+                        <!-- <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a> -->
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Amrita Vishwa Vidyapeetham <a class="social-icon" href="#education" onclick="educationDetails()"><i class="fa fa-medal"></i></a></h3>
+                            <div class="subheading mb-3">Bachelor of Technology</div>
+                            <div>Computer Science and Engineering</div>
+                            <p>GPA: 9.46/10</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Aug 2015 - Jun 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Kamala Niketan Montessori School</h3>
+                            <div class="subheading mb-3">12th grade (high school), CBSE</div>
+                            <p>GPA: 9.5/10</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2015</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Professional Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Member of Technical Staff <a class="social-icon" href="#experience" onclick="vmwareDetails()"><i class="fa fa-medal"></i></a></h3>
+                            <div class="subheading mb-3">VMware R&D</div>
+                            <p>I work for AppDefense (now CarbonBlack) which is an application security product for workloads and endpoints. My work involves designing and building automation frameworks in Python to ensure correctness of our security features - Guest Integrity (which checks for any malicious kernel attacks) and Vulnerability Assessment for determining the vulnerabilities present in OSes and applications. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jul 2019 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Intern</h3>
+                            <div class="subheading mb-3">VMware R&D, NSX</div>
+                            <p>I was responsible for re-writing the lower level code for an internal framework to comply with newer standards. As the framework was in constant use by over 40+ engineers, I had to make changes such that they do not impact anyone at the user-level. My role required strong Python skills, shell scripting and working over virtual machines and datacenters.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2019 - Jun 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Digital Technology Intern</h3>
+                            <div class="subheading mb-3">GE Digital</div>
+                            <p>As a technology intern under the GE Renewables umbrella, I optimized the algorithm used for determining the mechanical load on GE Wind Turbines. I worked along-side principal scientists and brought down the run-time from 3 hours to 20 minutes by using efficient mathematical minimization functions.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2018 - Jul 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Research Experience-->
+            <section class="resume-section" id="rexperience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Research Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Undergraduate Research Assistant <a class="social-icon" href="#rexperience" onclick="snakeAIDetails()"><i class="fa fa-medal"></i></a></h3>
+
+
+                            <div class="subheading mb-3">Amrita Vishwa Vidyapeetham</div>
+                            <p>Alongside my corporate intersnhip with VMware, I also participated in an academic research project with Dr. Vidhya Balasubramanian and Dr. Shunmuga Velayutham. We outlined the design of a successful fitness function, which "evolves" an artificial agent to play (and perfect) the Snake Game - using a novel combination of Neuroevolution and Search Algorithms (like Curiosity Search and Novelty Search). We then modeled the snake game as a goal-seeking problem where our agents showed great adaptability even in uncertain environments.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2019 - Jul 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Research Intern</h3>
+                            <div class="subheading mb-3">Preflet</div>
+                            <p>I served as a part-time research intern at Preflet, a startup in Lisbon, Portugal. I built a platform which automatically trains a Machine Learning model using the most suitable algorithm given a dataset. By using population-based Evolutionary Algorithms, the platform was able to fine-tune the model's hyper parameters which further increased its robustness.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Feb 2019 - Nov 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Undergraduate Research Assistant <a class="social-icon" href="#rexperience" onclick="hecDetails()"><i class="fa fa-medal"></i></a></h3>
+                            <div class="subheading mb-3">Amrita Vishwa Vidyapeetham</div>
+                            <p>Under the mentorship of Dr. Gowtham R and Prof. Dayanand Vinod, I designed a digital and real-time solution to prevent Human-Elephant conflicts across the forest fringes of Kerala, India. We developed a novel layered approach that minimizes the load of running deep learning models on computationally limited devices like Raspberry Pi. The system was successfully able to detecte all 4 instances of intruding elephant herds along our campus boundary.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Oct 2018 - Jan 2019</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="publications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Publications</h2>
+
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-quote-left"></i></span>
+                            Vignesh Kumar K, <u>Sourav Ravikumar</u>, Shunmuga Velayutham C, Vidhya Balasubramanian
+                            <br><strong> Fitness Function Design for Neuroevolution in Goal-finding Game Environments, </strong> <br>Springer’s Communications in Computer and Information Science, 2020 [In Press]
+                        </li>
+                        <br>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-quote-left"></i></span>
+                            <u>Sourav Ravikumar</u>, Dayanand Vinod, Gowtham Ramesh, Sini Raj Pulari, Senthilkumar Mathi
+                            <br><strong>A Layered Approach to Detect Elephants in Live Surveillance Video Streams using Convolutional Neural Networks,</strong>
+                            <br>Journal of Intelligent & Fuzzy Systems, 2019, DOI: 10.3233/JIFS-179710
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <section class="section">
+                        <div class="container">
+                          <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-12">
+                              <div class="tile">
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('snake-ai')" class="tile is-child notification">
+                                    <p class="subheading mb-3">Snake AI</p>
+                                    <!-- <figure class="image"> -->
+                                      <img src="img/snake.png">
+                                    <!-- </figure> -->
+                                  </article>
+                                </div>
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('rps')" class="tile is-child notification">
+                                    <p class="subheading mb-3">Rock Paper Scissors AI</p>
+                                    <figure class="image is-4by3">
+                                      <img class="modal-trigger" data-target="project-2-modal" src="img/rps.jpg">
+                                    </figure>
+                                  </article>
+                                </div>
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('hec')" class="tile is-child notification">
+                                    <p class="subheading mb-3">HEC Avoidance System</p>
+                                    <figure class="image is-4by3">
+                                      <img class="modal-trigger" data-target="project-3-modal" src="img/hec.png">
+                                    </figure>
+                                  </article>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-12">
+                              <div class="tile">
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('handy')" class="tile is-child notification">
+                                    <p class="subheading mb-3">Handy</p>
+                                    <figure class="image is-4by3">
+                                      <img class="modal-trigger" data-target="project-4-modal" src="img/handy.jpg">
+                                    </figure>
+                                  </article>
+                                </div>
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('att')" class="tile is-child notification">
+                                    <p class="subheading mb-3">Auto Attendance</p>
+                                    <figure class="image is-4by3">
+                                      <img class="modal-trigger" data-target="project-5-modal" src="img/crowd.png">
+                                    </figure>
+                                  </article>
+                                </div>
+                                <div class="tile is-parent">
+                                  <article onclick="showProject('other')" class="tile is-child notification">
+                                    <p class="subheading mb-3">Other Projects</p>
+                                    <figure class="image is-4by3">
+                                      <img class="modal-trigger" data-target="project-6-modal" src="img/github.jpg">
+                                    </figure>
+                                  </article>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Honors</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Honoured Member of the <strong>Tech{know}logy Club</strong>, Amrita.
+                            <br>Conducted two workshops (Chatbots 101 and Hands-on Machine Learning) which were attended by more than 250 people totally
+                        </li>
+                        <br>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Youngest <a href="https://www.packtpub.com/authors/sourav-johar">author</a> to publish online courses for professionals and students at Packt Publishing, UK
+                        </li>
+                        <br>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Finalist in the Amrita Annual Public Speaking Contast, 2018
+                        </li>
+                        <br>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Won the 1st place in the CTF Event organised as part of the <strong>MooseCon Web Security Conference</strong>, Pune, 2019.
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+
+<script>
+
+function educationDetails() {
+  Swal.fire({
+  title: 'Graduated First Class with Distinction',
+  text: 'Top 5% in a batch of 300',
+  confirmButtonText: 'Cool',
+  showCloseButton: true,
+  showConfirmButton: false
+})
+}
+
+function vmwareDetails() {
+  Swal.fire({
+  title: 'Best Mentor Award, 2020',
+  text: "Mentored the winning team of 4 new graduates at VMware's annual Bootcamp Hackathon",
+  confirmButtonText: 'Cool',
+  showCloseButton: true,
+  showConfirmButton: false
+})
+}
+
+function snakeAIDetails() {
+  Swal.fire({
+  title: 'Research Paper in Press',
+  width: 800,
+  html: '<strong style="margin-right: 100%"> Title </strong><p style="text-align: left">Fitness Function Design for Neuroevolution in Goal-finding Game Environments</p>' +
+        '<strong style="margin-right: 100%"> Journal </strong><p style="text-align: left">Springer’s Communications in Computer and Information Science</p>' +
+        '<strong style="margin-right: 100%"> To be Presented At </strong><p style="text-align: left">12th International Conference on Computational Collective Intelligence, Vietnam, 2020</p>',
+  showCloseButton: true,
+  showConfirmButton: false,
+  focusConfirm: true
+  })
+}
+
+function hecDetails() {
+  Swal.fire({
+  title: 'Research Paper Published',
+  width: 800,
+  html: '<strong style="margin-right: 100%"> Title </strong><p style="text-align: left">A Layered Approach to Detect Elephants in Live Surveillance Video Streams using Convolutional Neural Networks </p>' +
+        '<strong style="margin-right: 100%"> Journal </strong><p style="text-align: left">Journal of Intelligent & Fuzzy Systems, IOS Press, Netherlands </p>' +
+        '<strong style="margin-right: 100%"> Presented At </strong><p style="text-align: left">Fifth International Symposium on Intelligent Systems Technologies and Applications, 2019 </p>',
+  showCloseButton: true,
+  showConfirmButton: false,
+  focusConfirm: true
+  })
+}
+
+function showProject(name) {
+  if (name == 'other') {
+    openLink('https://github.com/SouravJohar')
+  }
+
+  if (name == "snake-ai") {
+    Swal.fire({
+    title: 'Snake AI',
+    width: 600,
+    html: '<p style="text-align: left">Evolving a population of artificial agents to play the Snake game using Neuroevolution, Reinforcement Learning and Search Algorithms</p>' +
+          '<ul class="tags">' +
+          '<li><p  class="tag">JavaScript</p></li>' +
+          '<li><p  class="tag">NEAT</p></li>' +
+          '<li><p class="tag">Neural Networks</p></li>' +
+          '<li><p class="tag">Evolutionary Algorithms</p></li>' +
+          '<li><p class="tag">Reinforcement Learning</p></li>' +
+          '</ul>' +
+          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/snake-ai")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
+    showCloseButton: true,
+    showConfirmButton: false,
+    focusConfirm: true
+    })
+  }
+
+  if (name == "rps") {
+    Swal.fire({
+    title: 'Rock Paper Scissors AI',
+    width: 600,
+    html: '<p style="text-align: left">An AI that recognizes the move (rock, paper or scissors) made by you and let\'s you play a digital version of the game against the computer using your webcam.</p>' +
+          '<ul class="tags">' +
+          '<li><p  class="tag">Python</p></li>' +
+          '<li><p  class="tag">Scikit-learn</p></li>' +
+          '<li><p class="tag">OpenCV</p></li>' +
+          '<li><p class="tag">Tensorflow</p></li>' +
+          '</ul>' +
+          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/rock-paper-scissors")><i  style="font-size: 40px"class="fab fa-github"></i></a>' + '  <a href="#intersts" onclick=openLink("https://www.youtube.com/watch?v=0uSA3xyXlwM")><i  style="font-size: 40px"class="fab fa-youtube"></i></a>',
+    showCloseButton: true,
+    showConfirmButton: false
+    })
+  }
+
+  if (name == "hec") {
+    Swal.fire({
+    title: 'Human Elephant Conflict Avoidance System',
+    width: 600,
+    html: '<p style="text-align: left">A digital and real-time solution to prevent Human-Elephant conflicts across the forest fringes of India. This three-tier solution involves intelligent (Machine+Deep Learning) analysis of audio, video and vibrations gathered from the sensors deployed.</p>' +
+          '<ul class="tags">' +
+          '<li><p  class="tag">Python</p></li>' +
+          '<li><p  class="tag">Scikit-learn</p></li>' +
+          '<li><p class="tag">OpenCV</p></li>' +
+          '<li><p class="tag">Tensorflow</p></li>' +
+          '<li><p class="tag">Object Detection</p></li>' +
+          '<li><p class="tag">Flask</p></li>' +
+          '<li><p class="tag">Pandas</p></li>' +
+          '<li><p class="tag">Raspberry Pi</p></li>' +
+          '</ul>' +
+          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/hec-video")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
+    showCloseButton: true,
+    showConfirmButton: false
+    })
+  }
+
+  if (name == "handy") {
+    Swal.fire({
+    title: 'Handy',
+    width: 600,
+    html: '<p style="text-align: left">An interface/plugin to control a Media Player through interactive and extensive hand gestures. The plugin uses Computer Vision and Machine Learning to detect complex hand gestures like ”swipe left with two fingers up”.</p>' +
+          '<ul class="tags">' +
+          '<li><p  class="tag">Python</p></li>' +
+          '<li><p  class="tag">Scikit-learn</p></li>' +
+          '<li><p class="tag">OpenCV</p></li>' +
+          '<li><p class="tag">Tensorflow</p></li>' +
+          '</ul>' +
+          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/handy")><i  style="font-size: 40px"class="fab fa-github"></i></a>' + '  <a href="#intersts" onclick=openLink("https://www.youtube.com/watch?v=-_9WFzgI7ak")><i  style="font-size: 40px"class="fab fa-youtube"></i></a>',
+    showCloseButton: true,
+    showConfirmButton: false
+    })
+  }
+
+  if (name == "att") {
+    Swal.fire({
+    title: 'Auto Attendance',
+    width: 600,
+    html: '<p style="text-align: left">A scalable and low latency IoT application to uniquely identify the presence of individual students in a classroom using facial information as a biometric. The prototype was integrated with our college’s attendance server and received 91% accuracy in determining the students present in our classroom.</p>' +
+          '<ul class="tags">' +
+          '<li><p  class="tag">Python</p></li>' +
+          '<li><p  class="tag">Scikit-learn</p></li>' +
+          '<li><p class="tag">OpenCV</p></li>' +
+          '<li><p class="tag">Django</p></li>' +
+          '<li><p class="tag">JavaScript</p></li>' +
+          '<li><p class="tag">MySQL</p></li>' +
+          '</ul>',
+    showCloseButton: true,
+    showConfirmButton: false
+    })
+  }
+
+  if (name == "other") {
+    openLink('https://github.com/SouravJohar')
+  }
+}
+
+function openLink(link) {
+  window.open(
+    link,
+    '_blank'
+  );
+}
+</script>

@@ -60,9 +60,9 @@ article:hover {
                     <p class="lead mb-5">I'm a 22 year old CS undergrad from India, who is highly motivated to innovate in the field of AI. I aim to build artificial agents that show human-like “common sense” in their operating domains. When I'm not in front of my computer, I like to hike, play the piano, and read a book.
                       I also upload programming tutorials on my YouTube channel where I wish I was more active.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.youtube.com/channel/UCbsI5Rw9_yLccfoMEYYxDCg"><i class="fab fa-youtube"></i></a>
-                        <a class="social-icon" href="http://www.linkedin.com/in/sourav-johar"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/SouravJohar"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" onclick="openLink('https://www.youtube.com/channel/UCbsI5Rw9_yLccfoMEYYxDCg')"><i class="fab fa-youtube"></i></a>
+                        <a class="social-icon" onclick="openLink('http://www.linkedin.com/in/sourav-johar')"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" onclick="openLink('https://github.com/SouravJohar')"><i class="fab fa-github"></i></a>
                         <!-- <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a> -->
                     </div>
                 </div>
@@ -316,9 +316,9 @@ function snakeAIDetails() {
   Swal.fire({
   title: 'Research Paper in Press',
   width: 800,
-  html: '<strong style="margin-right: 100%"> Title </strong><p style="text-align: left">Fitness Function Design for Neuroevolution in Goal-finding Game Environments</p>' +
-        '<strong style="margin-right: 100%"> Journal </strong><p style="text-align: left">Springer’s Communications in Computer and Information Science</p>' +
-        '<strong style="margin-right: 100%"> To be Presented At </strong><p style="text-align: left">12th International Conference on Computational Collective Intelligence, Vietnam, 2020</p>',
+  html: '<strong><p style="text-align: left"> Title </p></strong><p style="text-align: left">Fitness Function Design for Neuroevolution in Goal-finding Game Environments</p>' +
+        '<strong><p style="text-align: left"> Journal </p></strong><p style="text-align: left">Springer’s Communications in Computer and Information Science</p>' +
+        '<strong><p style="text-align: left"> To be Presented At </p></strong><p style="text-align: left">12th International Conference on Computational Collective Intelligence, Vietnam, 2020</p>',
   showCloseButton: true,
   showConfirmButton: false,
   focusConfirm: true
@@ -329,9 +329,9 @@ function hecDetails() {
   Swal.fire({
   title: 'Research Paper Published',
   width: 800,
-  html: '<strong style="margin-right: 100%"> Title </strong><p style="text-align: left">A Layered Approach to Detect Elephants in Live Surveillance Video Streams using Convolutional Neural Networks </p>' +
-        '<strong style="margin-right: 100%"> Journal </strong><p style="text-align: left">Journal of Intelligent & Fuzzy Systems, IOS Press, Netherlands </p>' +
-        '<strong style="margin-right: 100%"> Presented At </strong><p style="text-align: left">Fifth International Symposium on Intelligent Systems Technologies and Applications, 2019 </p>',
+  html: '<strong><p style="text-align: left"> Title </p></strong><p style="text-align: left">A Layered Approach to Detect Elephants in Live Surveillance Video Streams using Convolutional Neural Networks </p>' +
+        '<strong><p style="text-align: left"> Journal </p></strong><p style="text-align: left">Journal of Intelligent & Fuzzy Systems, IOS Press, Netherlands </p>' +
+        '<strong><p style="text-align: left"> To be Presented At </p></strong><p style="text-align: left">Fifth International Symposium on Intelligent Systems Technologies and Applications, 2019 </p>',
   showCloseButton: true,
   showConfirmButton: false,
   focusConfirm: true
@@ -433,10 +433,6 @@ function showProject(name) {
     showCloseButton: true,
     showConfirmButton: false
     })
-  }
-
-  if (name == "other") {
-    openLink('https://github.com/SouravJohar')
   }
 }
 
